@@ -5,3 +5,6 @@ body{
     background-color: #282b30;
     color: white;
 }
+footer{
+    vertical-align: bottom;
+}
