@@ -11,6 +11,7 @@ function keretez() {
     let szel = meret+"px"
     let border = keret+"px solid "+szin;
 
+    document.getElementById("kep").src = Kurl;
     document.getElementById("kep").style.width =szel;
     document.getElementById("kep").style.border = border;
 }
