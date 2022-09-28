@@ -1,4 +1,4 @@
-# Webpack keretalkalmazás
+# Webpack keretalkalmazás Benedek Ákos Marcell
 
 ## Telepítés
 
