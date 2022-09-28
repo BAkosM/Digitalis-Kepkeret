@@ -6,15 +6,18 @@
     <title>Digitális Képkeret</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
 </head>
 <img>
     <p>Kép URL-je: </p><input type="url" id="KUrl">
     <p>Kép szélessége pixelben: </p><input type="number" id="KWith">
     <p>Képkeret vastagsága: </p><input type="number" id="KBorder">
-    <p>Képkeret szine: </p><input type="color" id="KColor">
+    <p>Képkeret szine: </p><input type="color" id="KColor"><br>
     <button id="gomb">Keretez</button>
     <p>Eredmény: </p>
-    <img src="cat.jpg">
+    <img src="cat.jpeg" id="kep">
+    <output type="text" id="test"></output>
     <script src='main.js'></script>
+    <script src='index.js'></script>
 </body>
 </html>
