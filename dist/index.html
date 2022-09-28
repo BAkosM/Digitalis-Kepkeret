@@ -3,12 +3,18 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Digitális Képkeret</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
-<body>
-    <p>This is a template</p>    
+<img>
+    <p>Kép URL-je: </p><input type="url" id="KUrl">
+    <p>Kép szélessége pixelben: </p><input type="number" id="KWith">
+    <p>Képkeret vastagsága: </p><input type="number" id="KBorder">
+    <p>Képkeret szine: </p><input type="color" id="KColor">
+    <button id="gomb">Keretez</button>
+    <p>Eredmény: </p>
+    <img src="cat.jpg">
     <script src='main.js'></script>
 </body>
 </html>
