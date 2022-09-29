@@ -1,18 +1,17 @@
 import './style.css';
-
-function keretez() {
-    //Test
-    //console.log('katt');
-    
+function kurl() {
     let Kurl = document.getElementById("KUrl").value;
+    document.getElementById("kep").src = Kurl;
+}
+function szel() {
     let meret = parseFloat(document.getElementById("KWith").value);
+    let szel = meret+"px";
+    document.getElementById("kep").style.width =szel;
+}
+function keret() {
     let keret = parseFloat(document.getElementById("KBorder").value);
     let szin = document.getElementById("KColor").value;
-    let szel = meret+"px"
-    let border = keret+"px solid "+szin;
-
-    document.getElementById("kep").src = Kurl;
-    document.getElementById("kep").style.width =szel;
+    let border = keret+"px solid "+szin;    
     document.getElementById("kep").style.border = border;
 }
 var onoff = 0;
@@ -28,7 +27,10 @@ function darkmode() {
     }
 }
 function init(){
-    document.getElementById("gomb").addEventListener('click', keretez);
+    document.getElementById("KUrl").addEventListener('input', kurl);
+    document.getElementById("KWith").addEventListener('change', szel);
+    document.getElementById("KBorder").addEventListener('change', keret);
+    document.getElementById("KColor").addEventListener('change', keret);
     document.getElementById("dark").addEventListener('click', darkmode);
 }
 document.addEventListener("DOMContentLoaded",init);
